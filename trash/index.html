@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> HOME | AITI-Staff Attendance portal</title>
+	<link rel="icon" type="image/png" href="image_and_icon_files/aiti_logo.png">
+	<link rel="stylesheet" type="text/css" href="css_files/desktop_css.css">
+	<link rel="stylesheet" type="text/css" href="css_files/small_mobile_view.css">
+	<link rel="stylesheet" type="text/css" href="css_files/medium_mobile_view.css">
+	<link rel="stylesheet" type="text/css" href="css_files/tablet_view.css">
+	<link rel="stylesheet" type="text/css" href="css_files/w3.css1.css">
+	<script src="javascript_files/jquery-3.4.1.min.js"></script>
+	<script src="javascript_files/JQUERY.js"></script>
+</head>
+<body>
+
+	<!-- Desktop section -->
+	<!-- -------------------------------------------- -->
+	<div class="modal" class="w3-blue" style="width: 80%;position: absolute; height: 350px;color:#000!important;background-color:#3f51b5!important;margin-top: 150px;margin-bottom: 100px;margin-left: 8%; border-radius: 5px;animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)};box-shadow: 2px 3px 3px 6px grey">
+		<strong id="shut_admin" style="font-size: 180%;float: right;margin-top: 10px;margin-right: 2%;cursor: pointer; text-align: center;" class="w3-red w3-border w3-border-red">X</strong>
+		<form class="w3-container">
+			<input type="text" name="adm_id" id="adm" placeholder="Admin ID" style="height: 50px;margin-bottom: 20px;margin-top:20px;width: 100%;border-radius: 3px;outline:none;" class="w3-input"><br>
+			<input type="password" name="password" id="adm_pass" placeholder="Password" style="height: 50px;margin-bottom: 20px;width: 100%;border-radius: 5px;outline: none;"><br>
+			<button class="w3-btn w3-blue w3-round" class="w3-input" style="width: 20%;margin-left: 40%;height: 50px" id="modal_submit">Login</button><br>
+			<span class="w3-text-red" style="font-weight: bold;font-size:110%;display: none;text-align: center;" id="validate_msg">Please enter your ID and password</span>
+		</form>
+	</div>
+	<div class="desktop_main_content">
+		<div class="desktop_header">
+			<div id="d_AITI_logo">
+				<img class="w3-image" src="image_and_icon_files/aiti_logo.png">
+			</div>
+			<div id="AITI_admin">
+				<div id="_admin">
+					<strong id="open_admin" class="w3-border w3-display-topright w3-round w3-border-blue w3-blue">Admin Portal</strong>
+				</div>
+				<form class="w3-container" >
+					<label><strong>Admin Portal</strong></label>
+					<input class="w3-input w3-border" type="text" id="admin_ID" name="ID" placeholder="Staff ID">
+					<input class="w3-input w3-border" type="password" id="pass" name="Pass" placeholder="Password">
+					<button class="w3-btn w3-blue w3-round" type="submit" id="LogIn">LogIn</button>
+					<br>
+					<span class="w3-text-red" style="display: none;text-align: left;font-weight: bolder; margin-right:-10%" id="admin_alert">Please Enter your admin ID and password</span>
+				</form>
+			</div>
+		</div>
+		<div class="desktop_body" class="w3-container">
+			<div id="d_body">
+				<span class="w3-panel" style="text-align: center; ">
+					<h1 style="font-weight: bolder;font-size: 60px;">WELCOME!</h1>
+					<p style="font-size: 28px;"><strong>AITI - KACE</strong> welcomes you to a new day of working experience.<strong>I am your Attendance Log Sheet.</strong></p>
+				</span>
+				<span id="d_check_form">
+					<form class="w3-container">
+						<input class="w3-input w3-border" type="text" name="ID" id="staff_ID" placeholder="Staff ID">
+						<button class="w3-btn w3-blue w3-round" type="submit" id="Submit">Submit</button>
+
+						<!-- checkIn and checkOut button-->
+						<button class="w3-btn w3-rounded w3-red w3-round" id="check_in" style="display: none;">CheckIn</button>
+						<button class="w3-btn w3-rounded w3-red w3-round" id="check_out" style="display: none;">CheckOut</button>
+						<br>
+						<span class="w3-text-red" style="display: none;text-align: left;font-weight: bolder;margin-right:-10%" id="staff_alert">Please Enter your Staff ID</span>
+					</form>
+				</span>
+			</div>
+		</div>
+		<div class="desktop_footer">
+		</div>
+	</div>
+
+	<!-- -------------------------------------------- -->
+
+	<!-- mobile(small and large) and tablet section -->
+	<!-- -------------------------------------------- -->
+	
+
+	<!-- -------------------------------------------- -->
+</body>
+</html>
